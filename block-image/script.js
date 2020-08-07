@@ -35,7 +35,7 @@ function onSubmit() {
     imageData
       .map((ar) => ar.join(""))
       .forEach((s) => {
-        charImg = charImg + "</br>" + s;
+        charImg = charImg + "<br /><pre>" + s + "</pre>";
       });
     document.getElementById("result").innerHTML = charImg;
   });
