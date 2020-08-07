@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block Image</title>
+    <link rel="stylesheet" href="./pinchX.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Block Image</h1>
+    </header>
+    <h2>Define your width and height below.</h2>
+    <input
+      type="number"
+      name="rows"
+      class="text-input"
+      placeholder="Row Count"
+      id="rows"
+    />
+    <input
+      type="number"
+      name="columns"
+      id="columns"
+      class="text-input"
+      placeholder="Column Count"
+    />
+    <input
+      type="url"
+      name="URL"
+      id="url"
+      class="text-input"
+      placeholder="Image URL"
+    />
+
+    <button onclick="onSubmit()" class="btn-nav">Start</button>
+    <br />
+    <div id="image">
+      <table id="main"></table>
+    </div>
+    <pre id="result"></pre>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
