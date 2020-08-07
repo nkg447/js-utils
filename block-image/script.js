@@ -28,7 +28,7 @@ function onSubmit() {
       imageData[row_num][column_num] = " ";
       this.style.backgroundColor = "transparent";
     } else {
-      imageData[row_num][column_num] = "■";
+      imageData[row_num][column_num] = "█";
       this.style.backgroundColor = "white";
     }
     let charImg = "";
